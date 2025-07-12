@@ -90,7 +90,7 @@ For this code block above I want you to answer the following questions:
 
 Use the [registry](https://registry.terraform.io/) and search vpc to find the aws_vpc resource page. 
 
-Answers
+Answers (Check here if you're stuck or ready to compare)
 <details>
 1. None, actually.
 2. All of the arguments are optional.
