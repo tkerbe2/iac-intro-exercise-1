@@ -41,7 +41,7 @@ resource "aws_subnet" "lab-web-sn" {
 #==================#
 
 # Here we create our internet gateway. This allows our VM to reach the internet and will allow us to reach our VM.
-# This resource block below creates the Internet Gateway resource, but it does not attach it.
+# This resource block below creates the Internet Gateway resource and attaches it to our VPC.
 
 resource "aws_internet_gateway" "lab-igw" {
   vpc_id = aws_vpc.lab-vpc.id
@@ -50,19 +50,6 @@ resource "aws_internet_gateway" "lab-igw" {
     Name        = "lab-1-igw"
     Environment = "Dev"
   }
-}
-
-
-#=============================#
-# Internet Gateway Attachment #
-#=============================#
-
-# Here you will actually attach your Internet Gateway to the VPC.
-# If you don't attach an Internet Gateway to the VPC, it will not forward traffic.
-
-resource "aws_internet_gateway_attachment" "lab-igw" {
-  internet_gateway_id = aws_internet_gateway.lab-igw.id
-  vpc_id              = aws_vpc.lab-vpc.id
 }
 
 #=====================#
