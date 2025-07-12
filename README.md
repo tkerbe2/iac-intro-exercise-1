@@ -65,7 +65,7 @@ resource "aws_s3_bucket" "my_bucket" {
 - Next you have the bucket which is an optional argument. This means that if you don't supply a value or the argument is not present, the argument has a default value or action.
 - Lastly, tags are optional and in AWS they're just a way to label and organize resources. You can supply values or leave them blank.
 
-To see all the different ways you can configure a specific resource block you will use [The Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket). You can use this registry to find all resource types and how they can be configured and defined with Terraform. 
+To see all the different ways you can configure a specific resource block you will use [the Terraform Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket). You can use this registry to find all resource types and how they can be configured and defined with Terraform. 
 
 ### ✍️ AWS VPC Code Exercise
 
