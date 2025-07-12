@@ -3,7 +3,7 @@
 <br>
 
 
-# 🧪 Creating Basic Resources in AWS with HCP Terraform - Guided Lab
+# 🧪 Basic AWS with HCP Terraform - Guided Lab
 
 In this lab you will create some basic AWS resources and deploy them using HCP Terraform. 
 
