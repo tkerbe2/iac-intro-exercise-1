@@ -119,4 +119,15 @@ main_vpc
 
 <br>
 
-# Lab Steps
+# ✨ Congratulations!
+
+***
+
+You've finished this lab and have completed the following items:
+- ✅ Learned about Terraform files.
+- ✅ Learned the basics about resource blocks.
+- ✅ Learned the basics about arguments.
+- ✅ Analyzed some Terraform code.
+
+
+***
