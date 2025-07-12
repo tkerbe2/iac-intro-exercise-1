@@ -63,7 +63,43 @@ resource "aws_s3_bucket" "my_bucket" {
 
 - On the first line you will see the `resource`, followed by the type as `aws_s3_bucket`. This is our resource type and the `"my_bucket"` is the local name.
 - Next you have the bucket which is an optional argument. This means that if you don't supply a value or the argument is not present, the argument has a default value or action.
+- Lastly, tags are optional and in AWS they're just a way to label and organize resources. You can supply values or leave them blank.
 
+To see all the different ways you can configure a specific resource block you will use [The Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket). You can use this registry to find all resource types and how they can be configured and defined with Terraform. 
+
+### ✍️ AWS VPC Code Exercise
+
+```
+resource "aws_vpc" "main_vpc" {
+  cidr_block       = "192.168.0.1/24"
+  instance_tenancy = "default"
+  region           = "us-east-1"
+
+  tags = {
+    Name        = "tkdev_vpc"
+    Environment = "Prod"
+    Department  = "Development"
+  }
+}
+```
+
+For this code block above I want you to answer the following questions:
+1. Which arguments are required?
+2. Which arguments are optional?
+3. What is the resource local name?
+
+Use the [registry](https://registry.terraform.io/) and search vpc to find the aws_vpc resource page. 
+
+Answers
+<details>
+1. None, actually.
+2. All of the arguments are optional.
+3. main_vpc.
+Read the [Terraform Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) page for this resource for complete detail.
+</details>
+
+
+<br>
 
 ## 📖 Suggested Reading
 - [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
