@@ -22,7 +22,7 @@ data "aws_ami" "amzn_linux" {
 # This will create us a simple free-tier EC2 instance in our lab VPC.
 
 resource "aws_instance" "lab-web" {
-  ami                 = data.aws_ami.ubuntu.id
+  ami                 = data.aws_ami.amzn_linux.id
   instance_type       = "t3.micro"
   vpc_id              = aws_vpc.lab-vpc.id
   associate_public_ip = true
