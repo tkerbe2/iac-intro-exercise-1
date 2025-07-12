@@ -25,7 +25,7 @@ resource "aws_vpc" "lab-vpc" {
 
 # Here we create a single subnet for our VM to live in.
 
-resource "aws_subnet" "lab-web" {
+resource "aws_subnet" "lab-web-sn" {
   vpc_id     = aws_vpc.lab-vpc.id
   cidr_block = "10.10.0.0/24"
 

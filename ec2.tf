@@ -21,14 +21,26 @@ data "aws_ami" "amzn_linux" {
 
 # This will create us a simple free-tier EC2 instance in our lab VPC.
 
-resource "aws_instance" "lab-web" {
+resource "aws_instance" "lab-web-vm" {
   ami                 = data.aws_ami.amzn_linux.id
   instance_type       = "t3.micro"
-  vpc_id              = aws_vpc.lab-vpc.id
-  associate_public_ip = true
+  subnet_id           = aws_vpc.lab-web-sn.id
 
   tags = {
     Name        = "lab-1-ec2"
     Environment = "Dev"
   }
+}
+
+#=====================#
+# Elastic IP Resource #
+#=====================#
+
+# This will claim a random AWS owned public IP and assign it to our account.
+
+resource "aws_eip" "lab-web-eip" {
+
+# This assigns the EIP assign to our EC2 instance in the code block above.
+  instance = aws_instance.lab-web-vm.id
+  domain   = "vpc"
 }
