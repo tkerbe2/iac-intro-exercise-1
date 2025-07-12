@@ -94,8 +94,10 @@ Use the registry and search vpc to find the aws_vpc resource page.
 
 ### Answers
 (Check here if you're stuck or ready to compare)
-Remeber to use the [registry](https://registry.terraform.io/)
+Remeber to use the [registry](https://registry.terraform.io/).
+
 <br>
+
 Question 1.
 <details>
 None, actually
