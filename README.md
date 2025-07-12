@@ -3,23 +3,10 @@
 <br>
 
 
-# 🧪 Basic AWS with HCP Terraform - Guided Lab
+# 🧪 Basic AWS Code Analysis - Exercise
 
-In this lab you will create some basic AWS resources and deploy them using HCP Terraform. 
+In this lab we will quickly cover some basic Terraform concepts and analyze some code. 
 
-<br>
-
-### Resources Created:
-This demo creates the following resources:
-
-- VPC
-- Subnet
-- IGW
-- Static Routes
-- EC2 Instance
-- Security Group
-- Security Group Inbound Policy
-  
 <br>
 
 # 💡 Terms and Concepts
