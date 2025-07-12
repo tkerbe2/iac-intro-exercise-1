@@ -24,16 +24,25 @@ This demo creates the following resources:
 
 # 💡 Terms and Concepts
 
-In progress
+In this repo you will notice a bunch of files with the extension of .tf. The .tf file is the Terraform file extension. Any file with this extension will be seen as a configuration file written in HashiCorp Configuration Language. You can generally name TF files what you would like, however there are some best practices for common files with common configuration. The following files below are from HashiCorps Style Guide. 
 
-In AWS your account is like a container that all your resources you build such as VMs, buckets, etc, get attached to. Inside your account you can have users and roles with defined permissions, etc. All of this still lives within your account and your account will have a unique account ID that is tied to the email you used when you created it. Initially you will log into the AWS console with your root account (the account you created when you signed up) this will be your email. Root has unrestricted access to the entire AWS account and you rarely want to use this for day-to-day acitivity and creating infrastructure. This lab will walk through how to more tightely secure your root account with MFA and then create other accounts that you can use for this lab.
+- A backend.tf file that contains your backend configuration. You can define multiple terraform blocks in your configuration to separate your backend configuration from your Terraform and provider versioning configuration.
+- A main.tf file that contains all resource and data source blocks.
+- A outputs.tf file that contains all output blocks in alphabetical order.
+- A providers.tf file that contains all provider blocks and configuration.
+- A terraform.tf file that contains a single terraform block which defines your required_version and required_providers.
+- A variables.tf file that contains all variable blocks in alphabetical order.
+- A locals.tf file that contains local values. Refer to local values for more information.
+- A override.tf file that contains override definitions for your configuration. Terraform loads this and all files ending with _override.tf last. Use them sparingly and add comments to the original resource definitions, as these overrides make your code harder to - reason about. Refer to the override files documentation for more information.
+
+[HashiCorp. (n.d.). Style Guide.](https://developer.hashicorp.com/terraform/language/style)
 
 <br>
 
 
 > 📖 Suggested Reading 
-- [What is an AWS account?](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
-- [Terminology and concepts for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html)
+- [Style Guide]([https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html](https://developer.hashicorp.com/terraform/language/style))
+- [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
 
 <br>
 
