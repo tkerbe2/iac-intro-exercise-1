@@ -24,7 +24,7 @@ data "aws_ami" "amzn_linux" {
 resource "aws_instance" "lab-web-vm" {
   ami                 = data.aws_ami.amzn_linux.id
   instance_type       = "t3.micro"
-  subnet_id           = aws_vpc.lab-web-sn.id
+  subnet_id           = aws_subnet.lab-web-sn.id
 
   tags = {
     Name        = "lab-1-ec2"
