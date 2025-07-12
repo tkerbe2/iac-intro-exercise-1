@@ -26,7 +26,7 @@ This demo creates the following resources:
 
 ## Files and Structure
 
-In this repo you will notice a bunch of files with the extension of .tf. The .tf file is the Terraform file extension. Any file with this extension will be seen as a configuration file written in HashiCorp Configuration Language. You can generally name TF files what you would like, however there are some best practices for common files with common configuration. The following files below are from HashiCorps Style Guide. 
+In this repo you will notice a bunch of files with the extension of .tf. The .tf file is the Terraform file extension. Any file with this extension will be seen as a configuration file written in HashiCorp Configuration Language. You can generally name TF files what you would like, however there are some best practices for common files with common configuration. The following file names are from the HashiCorp Style Guide. By following these standards your code will be easier for others to read and consume. 
 
 > - A backend.tf file that contains your backend configuration. You can define multiple terraform blocks in your configuration to separate your backend configuration from your Terraform and provider versioning configuration.
 > - A main.tf file that contains all resource and data source blocks.
