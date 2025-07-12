@@ -60,7 +60,7 @@ resource "aws_s3_bucket" "my_bucket" {
 - On the first line you will see the `resource`, followed by the type as `aws_s3_bucket`. This is our resource type and the `"my_bucket"` is the local name.
 - Next you have the bucket which is an optional argument. 
 
-> 📖 Suggested Reading 
+# 📖 Suggested Reading 
 - [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
 - [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
 
