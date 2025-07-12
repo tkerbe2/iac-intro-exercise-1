@@ -46,6 +46,9 @@ In this repo you will notice a bunch of files with the extension of .tf. The .tf
 Terraform is mostly a large combination of resource blocks. These resource blocks define a specific resource type with a name that is only referenced in Terraform (local name). See the example below for a breakdown. 
 Terraform arguments are specific settings that can be used to configure a resource a specific type of way. 
 
+
+### AWS S3 Bucket Code Example
+
 ```
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "tkdev-test-bucket"
@@ -56,11 +59,13 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 ```
+<br>
 
 - On the first line you will see the `resource`, followed by the type as `aws_s3_bucket`. This is our resource type and the `"my_bucket"` is the local name.
-- Next you have the bucket which is an optional argument. 
+- Next you have the bucket which is an optional argument. This means that if you don't supply a value or the argument is not present, the argument has a default value or action.
 
-# 📖 Suggested Reading 
+
+## 📖 Suggested Reading
 - [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
 - [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
 
