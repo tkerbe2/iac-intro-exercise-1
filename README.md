@@ -24,6 +24,8 @@ This demo creates the following resources:
 
 # 💡 Terms and Concepts
 
+## Files and Structure
+
 In this repo you will notice a bunch of files with the extension of .tf. The .tf file is the Terraform file extension. Any file with this extension will be seen as a configuration file written in HashiCorp Configuration Language. You can generally name TF files what you would like, however there are some best practices for common files with common configuration. The following files below are from HashiCorps Style Guide. 
 
 - A backend.tf file that contains your backend configuration. You can define multiple terraform blocks in your configuration to separate your backend configuration from your Terraform and provider versioning configuration.
@@ -39,9 +41,27 @@ In this repo you will notice a bunch of files with the extension of .tf. The .tf
 
 <br>
 
+## Resource Blocks and Arguments
+
+Terraform is mostly a large combination of resource blocks. These resource blocks define a specific resource type with a name that is only referenced in Terraform (local name). See the example below for a breakdown. 
+Terraform arguments are specific settings that can be used to configure a resource a specific type of way. 
+
+```
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "tkdev-test-bucket"
+
+  tags = {
+    Name        = "tkdev-test-bucket"
+    Environment = "Dev"
+  }
+}
+```
+
+- On the first line you will see the `resource`, followed by the type as `aws_s3_bucket`. This is our resource type and the `"my_bucket"` is the local name.
+- Next you have the bucket which is an optional argument. 
 
 > 📖 Suggested Reading 
-- [Style Guide]([https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html](https://developer.hashicorp.com/terraform/language/style))
+- [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
 - [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
 
 <br>
