@@ -5,7 +5,7 @@
 
 # 🧪 Basic AWS Code Analysis - Exercise
 
-In this lab we will quickly cover some basic Terraform concepts and analyze some code. 
+In this lab we will quickly cover some basic Terraform concepts and analyze some code. No resources will be created but after this lab you will be ready for your first challenge.
 
 <br>
 
