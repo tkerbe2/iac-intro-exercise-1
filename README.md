@@ -7,7 +7,7 @@
 
 In this lab you will create some basic AWS resources and deploy them using HCP Terraform. 
 
-- [AWS Free Tier](https://aws.amazon.com/free/)
+<br>
 
 ### Resources Created:
 This demo creates the following resources:
