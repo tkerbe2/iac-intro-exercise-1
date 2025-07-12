@@ -90,13 +90,14 @@ For this code block above I want you to answer the following questions:
 
 Use the registry and search vpc to find the aws_vpc resource page. 
 
-Answers (Check here if you're stuck or ready to compare)
+<br>
+
+### Answers (Check here if you're stuck or ready to compare)
 Remeber to use the [registry](https://registry.terraform.io/)
 <details>
 1. None, actually.
 2. All of the arguments are optional.
 3. main_vpc.
-Read the [Terraform Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) page for this resource for complete detail.
 </details>
 
 
