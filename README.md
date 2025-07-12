@@ -92,14 +92,21 @@ Use the registry and search vpc to find the aws_vpc resource page.
 
 <br>
 
-### Answers (Check here if you're stuck or ready to compare)
+### Answers
+(Check here if you're stuck or ready to compare)
 Remeber to use the [registry](https://registry.terraform.io/)
+Question 1.
 <details>
-1. None, actually.
-2. All of the arguments are optional.
-3. main_vpc.
+None, actually
 </details>
-
+Question 2.
+<details>
+All of the arguments are optional.
+</details>
+Question 3.
+<details>
+main_vpc.
+</details>
 
 <br>
 
