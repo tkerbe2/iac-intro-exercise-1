@@ -3,7 +3,7 @@
 <br>
 
 
-# 🔬 Basic Terraform Code Concepts and Analysis - Exercise
+# 🔬 Exercise 1 - Basic Terraform Code Concepts and Analysis
 
 In this lab we will quickly cover some basic Terraform concepts and analyze some code. No resources will be created but after this lab you will be ready for your first challenge.
 
