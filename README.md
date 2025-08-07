@@ -3,9 +3,9 @@
 <br>
 
 
-# 🔬 Exercise 1 - Basic Terraform Code Concepts and Analysis
+# 🔬 Exercise 1 - The Basics of Terraform Code
 
-In this lab we will quickly cover some basic Terraform concepts and analyze some code. No resources will be created but after this lab you will be ready for your first challenge.
+In this lab we will quickly cover some basic Terraform concepts and analyze some real functional code. No resources will be created but after this lab you will be ready for your first challenge.
 
 <br>
 
@@ -31,8 +31,18 @@ In this repo you will notice a bunch of files with the extension of .tf. The .tf
 ## Resource Blocks and Arguments
 
 Terraform is mostly a large combination of resource blocks. These resource blocks define a specific resource type with a name that is only referenced in Terraform (local name). See the example below for a breakdown. 
-Terraform arguments are specific settings that can be used to configure a resource a specific type of way. 
+Terraform arguments are specific settings that can be used to configure a resource a specific type of way. Before proceeding I recommend reading all of the links in the Suggested Reading below. The readings below will most likely take anywhere from 15 - 45 minutes.
 
+# 📖 Suggested Reading
+- [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
+- [Syntax](https://developer.hashicorp.com/terraform/language/syntax)
+- [Configuration Syntax](https://developer.hashicorp.com/terraform/language/syntax/configuration)
+- [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
+- [Resource Behavior](https://developer.hashicorp.com/terraform/language/resources/behavior)
+- [Providers](https://developer.hashicorp.com/terraform/language/providers)
+- [Provider Configuration](https://developer.hashicorp.com/terraform/language/providers/configuration)
+
+<br>
 
 ### AWS S3 Bucket Code Example
 
@@ -100,12 +110,6 @@ main_vpc
 
 <br>
 
-## 📖 Suggested Reading
-- [Style Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
-- [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)
-
-<br>
-
 # ✨ Congratulations!
 
 ***
@@ -113,6 +117,7 @@ main_vpc
 You've finished this lab and have completed the following items:
 - ✅ Learned about Terraform files.
 - ✅ Learned the basics about resource blocks.
+- ✅ Learned the basics about provider blocks.
 - ✅ Learned the basics about arguments.
 - ✅ Analyzed some Terraform code.
 
